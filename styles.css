@@ -166,6 +166,30 @@ p {
  background: var(--clr-primary-8);
 }
 
+.section{
+  padding: 5rem 0;
+}
+.section-title{
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.section-title h2{
+  text-transform: uppercase;
+}
+.section-title span{
+  color: var(--clr-primary-5);
+}
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+
 /*
 =============== 
 Navbar
@@ -204,6 +228,22 @@ Hero
   background: var(--clr-white);
   color: var(--clr-primary-5);
 }
+.hero-btn:hover {
+  background: transparent;
+  color: var(--clr-white);
+  border-color: var(--clr-white);
+}
+@media screen and (min-width:768px){
+  .hero{
+    background: linear-gradient(rgb(44,174,186,0.6), rgba(0,0,0,0.6)), url('./images/pexels-george-desipris-2081007.jpg') center/cover no-repeat;
+  }
+  .hero-banner{
+    padding: 0;
+  }
+  .hero-banner p{
+    max-width:45rem;
+  }
+}
 /*
 =============== 
 About
@@ -212,7 +252,17 @@ About
 /* section add to globals */
 /* title add to globals */
 /* section center add to globals */
-
+.about-img,.about-info{
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 992px) {
+  .about-center{
+    display: flex;
+  }
+  .about-info,.about-img{
+    flex: ;
+  }
+}
 /*
 =============== 
 Services
